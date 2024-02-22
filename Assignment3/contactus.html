@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="background.css">
+    <title>Kickin It</title>
+    <style>
+        /* CSS for styling the navigation bar */
+        header {
+            background-color: #F1EFE7;
+            color: #F1EFE7;
+            padding: 12px 0;
+            display: flex;
+            justify-content: space-between; /* Aligns items at start and end of the flex container */
+            align-items: center; /* Aligns items vertically */
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0; /* Remove default margin */
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 13px;
+        }
+
+        nav ul li a {
+            color: hsl(0, 0%, 0%);
+            text-decoration: none;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 18px;
+        }
+
+        .label {
+            margin-left: 2px; /* Adjust the margin as needed */
+        }
+
+        /* Flex container for images */
+        .image-container {
+            display: flex;
+        }
+
+        /* Ensure images are not stretched */
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Add spacing between images */
+        .image-container img + img {
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img class="label" src="output-onlinepngtools.png" alt="Label Image">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contactus.html">About</a></li>
+                <li><a href="location.html">Locations</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div>
+        <h1>About Us</h1>
+    </div>
+    <p>
+        We are a football (not soccer) shop located in the United States. We sell everything that you need
+        to enjoy the game of football. With multiple selections of football equipment, including boots, balls, kits, and
+        goalkeeper gloves. We make sure that we give you the equipment that you need at a good price.
+    </p>
+    
+    <!-- Container for images -->
+    <div class="image-container">
+        <img src="images.jpeg" alt="Description of the image">
+        <img src="balls.jpeg" alt="Description of the image">
+    </div>
+</body>
+</html>
